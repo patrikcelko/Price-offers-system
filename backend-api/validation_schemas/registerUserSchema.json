@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "registerUserSchema.json",
+    "title": "Register user",
+    "description": "Schema that will be used to verify register JSON request.",
+    "properties": {
+        "email": {
+            "type": "string",
+            "format": "email",
+            "title": "User email"
+        },
+        "password": {
+            "type": "string",
+            "title": "User password",
+            "minLength": 4
+        },
+        "name": {
+            "type": "string",
+            "title": "User name"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "email",
+        "password",
+        "name"
+    ]
+}

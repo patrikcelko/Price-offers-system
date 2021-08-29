@@ -1,0 +1,78 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  uuid          String          @id @default(uuid())
+  email         String          @unique
+  name          String
+  entry_date    DateTime        @default(now())
+  salt          String
+  password_hash String
+  Companies     Company[]
+  Demand        Demand[]
+  Message       Message[]
+  Notifications Notifications[]
+}
+
+model Demand {
+  uuid         String        @id @default(uuid())
+  name         String
+  budget       Float
+  create_date  DateTime      @default(now())
+  status       String
+  description  String
+  until        DateTime
+  creator      User          @relation(fields: [creator_uuid], references: [uuid])
+  creator_uuid String
+  Negotiation  Negotiation[]
+}
+
+model Negotiation {
+  uuid         String    @id @default(uuid())
+  demand       Demand    @relation(fields: [demand_uuid], references: [uuid])
+  demand_uuid  String
+  company      Company   @relation(fields: [company_uuid], references: [uuid])
+  company_uuid String
+  last_change  DateTime  @updatedAt
+  price        Float
+  status       String
+  Message      Message[]
+}
+
+model Message {
+  uuid             String      @id @default(uuid())
+  sender           User        @relation(fields: [sender_uuid], references: [uuid])
+  sender_uuid      String
+  negotiation      Negotiation @relation(fields: [negotiation_uuid], references: [uuid])
+  last_change      DateTime    @updatedAt
+  negotiation_uuid String
+  is_deleted       Boolean
+  content          String
+}
+
+model Company {
+  uuid           String        @id @default(uuid())
+  user           User          @relation(fields: [user_uuid], references: [uuid])
+  user_uuid      String
+  name           String
+  residence      String
+  specialization String
+  phone          String
+  company_id     String        @unique
+  is_deleted     Boolean       @default(false)
+  Negotiation    Negotiation[]
+}
+
+model Notifications {
+  uuid        String   @id @default(uuid())
+  description String
+  user        User     @relation(fields: [user_uuid], references: [uuid])
+  user_uuid   String
+  created     DateTime @default(now())
+}

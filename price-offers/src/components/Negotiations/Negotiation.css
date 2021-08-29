@@ -1,0 +1,40 @@
+
+:root {
+  --edit-negotiation__button-margin-bottom: 0.52rem;
+  --edit-negotiation__form-top-padding: 1.9rem;
+  --edit-negotiation__form-left-padding: 1.6rem;
+  --edit-negotiation__form-bottom-padding: 1.9rem;
+  --edit-negotiation__form-right-padding: 1.6rem;
+  --edit-negotiation__field-bottom-padding: 1.6rem;
+  --edit-negotiation__form-padding:
+    var(--edit-negotiation__form-top-padding)
+    var(--edit-negotiation__form-right-padding)
+    var(--edit-negotiation__form-bottom-padding)
+    var(--edit-negotiation__form-left-padding);
+  --negotiation__status-control-bottom-margin: 1.3rem;
+}
+
+.negotiation__status-control {
+  padding: 0rem !important;
+  margin-bottom: var(--negotiation__status-control-bottom-margin) !important;
+}
+
+.edit-negotiation__button {
+  margin-bottom: var(--edit-negotiation__button-margin-bottom) !important;
+}
+
+.edit-negotiation__title {
+  align-self: center !important;
+}
+
+.edit-negotiation__form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--edit-negotiation__form-padding);
+}
+
+.edit-negotiation__field {
+  padding-bottom: var(--edit-negotiation__field-bottom-padding) !important;
+}

@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "updateUserSchema.json",
+    "title": "Update user profile",
+    "description": "Schema that will be used to update user profile after request.",
+    "properties": {
+        "oldPassword": {
+            "type": "string",
+            "title": "User old password",
+            "minLength": 4
+        },
+        "newPassword": {
+            "type": "string",
+            "title": "User new password",
+            "minLength": 4
+        },
+        "name": {
+            "type": "string",
+            "title": "User name"
+        }
+    },
+    "additionalProperties": false
+}

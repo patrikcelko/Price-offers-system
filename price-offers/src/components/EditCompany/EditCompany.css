@@ -1,0 +1,33 @@
+:root {
+    --edit-company__button-margin-bottom: 0.52rem;
+    --edit-company__form-top-padding: 1.9rem;
+    --edit-company__form-left-padding: 1.6rem;
+    --edit-company__form-bottom-padding: 1.9rem;
+    --edit-company__form-right-padding: 1.6rem;
+    --edit-company__field-bottom-padding: 1.6rem;
+    --edit-company__form-padding:
+      var(--edit-company__form-top-padding)
+      var(--edit-company__form-right-padding)
+      var(--edit-company__form-bottom-padding)
+      var(--edit-company__form-left-padding);
+  }
+  
+  .edit-company__button {
+    margin-bottom: var(--edit-company__button-margin-bottom) !important;
+  }
+  
+  .edit-company__title {
+    align-self: center !important;
+  }
+  
+  .edit-company__form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: var(--edit-company__form-padding);
+  }
+  
+  .edit-company__field {
+    padding-bottom: var(--edit-company__field-bottom-padding) !important;
+  }

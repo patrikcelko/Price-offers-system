@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "createNegotationSchema.json",
+    "title": "Create negotation schema",
+    "description": "Schema that will be used to create negotation JSON request.",
+    "properties": {
+        "demandUUID": {
+            "type": "string",
+            "title": "Demand UUID"
+        },
+        "companyUUID": {
+            "type": "string",
+            "title": "Company UUID"
+        },
+        "price": {
+            "type": "number",
+            "title": "Sugested price"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "demandUUID",
+        "companyUUID",
+        "price"
+    ]
+}

@@ -1,0 +1,33 @@
+:root {
+  --edit-demand__button-margin-bottom: 0.52rem;
+  --edit-demand__form-top-padding: 1.9rem;
+  --edit-demand__form-left-padding: 1.6rem;
+  --edit-demand__form-bottom-padding: 1.9rem;
+  --edit-demand__form-right-padding: 1.6rem;
+  --edit-demand__field-bottom-padding: 1.6rem;
+  --edit-demand__form-padding:
+    var(--edit-demand__form-top-padding)
+    var(--edit-demand__form-right-padding)
+    var(--edit-demand__form-bottom-padding)
+    var(--edit-demand__form-left-padding);
+}
+
+.edit-demand__button {
+  margin-bottom: var(--edit-demand__button-margin-bottom) !important;
+}
+
+.edit-demand__title {
+  align-self: center !important;
+}
+
+.edit-demand__form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--edit-demand__form-padding);
+}
+
+.edit-demand__field {
+  padding-bottom: var(--edit-demand__field-bottom-padding) !important;
+}

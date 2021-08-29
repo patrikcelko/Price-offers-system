@@ -1,0 +1,37 @@
+:root {
+  --create-negotation__button-margin-bottom: 0.52rem;
+  --create-negotation__form-top-padding: 1.9rem;
+  --create-negotation__form-left-padding: 1.6rem;
+  --create-negotation__form-bottom-padding: 1.9rem;
+  --create-negotation__form-right-padding: 1.6rem;
+  --create-negotation__field-bottom-padding: 1.6rem;
+  --create-negotation__form-padding:
+    var(--create-negotation__form-top-padding)
+    var(--create-negotation__form-right-padding)
+    var(--create-negotation__form-bottom-padding)
+    var(--create-negotation__form-left-padding);
+}
+
+.create-negotation__button {
+  margin-bottom: var(--create-negotation__button-margin-bottom) !important;
+}
+
+.create-negotation__title {
+  align-self: center !important;
+}
+
+.create-negotation__form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--create-negotation__form-padding);
+}
+
+.create-negotation__field {
+  padding-bottom: var(--create-negotation__field-bottom-padding) !important;
+}
+
+.create-negotation__company-selector {
+  margin-bottom: var(--create-negotation__field-bottom-padding) !important;
+}

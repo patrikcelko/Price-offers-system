@@ -1,0 +1,40 @@
+:root {
+  --demands-table__add-button-position: 2rem;
+  --create-demand__button-margin-bottom: 0.52rem;
+  --create-demand__form-top-padding: 1.9rem;
+  --create-demand__form-left-padding: 1.6rem;
+  --create-demand__form-bottom-padding: 1.9rem;
+  --create-demand__form-right-padding: 1.6rem;
+  --create-demand__field-bottom-padding: 1.6rem;
+  --create-demand__form-padding:
+    var(--create-demand__form-top-padding)
+    var(--create-demand__form-right-padding)
+    var(--create-demand__form-bottom-padding)
+    var(--create-demand__form-left-padding);
+}
+
+.demands-table__add-button {
+  position: absolute !important;
+  right: var(--demands-table__add-button-position);
+  bottom: var(--demands-table__add-button-position);
+}
+
+.create-demand__button {
+  margin-bottom: var(--create-demand__button-margin-bottom) !important;
+}
+
+.create-demand__title {
+  align-self: center !important;
+}
+
+.create-demand__form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--create-demand__form-padding);
+}
+
+.create-demand__field {
+  padding-bottom: var(--create-demand__field-bottom-padding) !important;
+}

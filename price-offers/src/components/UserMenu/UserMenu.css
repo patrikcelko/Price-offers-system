@@ -1,0 +1,40 @@
+@import '../../assets/colors.css';
+
+:root {
+  --user-menu__name-padding-top: 1.25rem;
+  --user-menu__icon-padding-top: 1rem;
+  --user-menu__email-bottom-top: 0.32rem;
+  --user-menu__email-left-right: 1rem;
+  --user-menu__link__icon-padding-right: 0.2rem
+}
+
+.user-menu__link {
+  text-decoration: none;
+}
+
+.user-menu__link_active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.user-menu__name {
+  align-self: center;
+  padding-top: var(--user-menu__name-padding-top);
+  color: var(--user-color);
+  font-weight: bold;
+}
+
+.user-menu__email {
+  align-self: center;
+  padding: var(--user-menu__email-bottom-top) var(--user-menu__email-left-right) var(--user-menu__email-bottom-top) var(--user-menu__email-left-right);
+}
+
+.user-menu__icon {
+  align-self: center;
+  padding-top: var(--user-menu__icon-padding-top);
+  transform: scale(1.6);
+}
+
+.user-menu__link__icon {
+  padding-right: var(--user-menu__link__icon-padding-right);
+}

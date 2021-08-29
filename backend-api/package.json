@@ -1,0 +1,43 @@
+{
+  "name": "price-offers-api",
+  "version": "1.0.0",
+  "description": "Back-End price-offers application",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node-dev --respawn -- src/index.ts",
+    "migrate": "prisma migrate dev",
+    "sedd": "prisma db seed --preview-feature",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "price-offers-api"
+  ],
+  "author": "Patrik Čelko, Dominik Melicher",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^2.24.1",
+    "djv": "^2.1.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@types/djv": "^2.1.0",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "^2.3.0",
+    "prisma": "^2.24.1",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  }
+}

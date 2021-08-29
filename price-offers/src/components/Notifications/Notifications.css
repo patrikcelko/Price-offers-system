@@ -1,0 +1,22 @@
+:root {
+  --notifications__delete-button--padding-left: 0.25rem;
+  --notifications__title-icon-pading-right: 0.13rem;
+  --notifications__title-icon-top: 0.32rem;
+}
+
+.notifications__delete-button {
+  padding-left: var(--notifications__delete-button--padding-left);
+}
+
+.notifications__notifications-button {
+  position: absolute !important;
+  top: 0;
+  right: var(--header__notifications-button-right);
+  color: var(--header__user-button-color) !important;
+}
+
+.notifications__title-icon {
+  position: relative;
+  padding-right: var(--notifications__title-icon-pading-right);
+  top: var(--notifications__title-icon-top);
+}

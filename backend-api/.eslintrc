@@ -1,0 +1,16 @@
+{
+    "root": true,
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "extends": "airbnb-typescript",
+    "ignorePatterns": [
+        "node_modules/",
+        "build/",
+        "dist/",
+        "e2e/"
+      ],
+    "rules": {
+        "no-console": "off"
+    }
+}

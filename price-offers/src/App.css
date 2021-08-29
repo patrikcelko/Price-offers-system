@@ -1,0 +1,35 @@
+@import './components/Header/Header.css';
+
+:root {
+  --content-top-margin: 0.5rem;
+  --content-right-margin: auto;
+  --content-bottom-margin: 0.5rem;
+  --content-left-margin: auto;
+  --content-margin:
+    var(--content-top-margin)
+    var(--content-right-margin)
+    var(--content-bottom-margin)
+    var(--content-left-margin);
+}
+
+.form__dialog-text {
+  text-align: center !important;
+}
+
+.content {
+  width: 75%;
+  height: calc(100% - var(--header-height) - var(--content-top-margin) - var(--content-bottom-margin));
+  margin: var(--content-margin);
+}
+
+@media only screen and (max-device-width: 1000px) {
+  :root {
+    --content-top-margin: 0;
+    --content-bottom-margin: 0;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+}

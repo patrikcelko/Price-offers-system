@@ -1,0 +1,38 @@
+:root {
+  --edit-profile__button-margin-bottom: 0.52rem;
+  --edit-profile__face-icon-padding-right: 0.2rem;
+  --edit-profile__field-bottom-padding: 1.6rem;
+  --edit-profile__form-top-padding: 1.9rem;
+  --edit-profile__form-left-padding: 1.6rem;
+  --edit-profile__form-bottom-padding: 1.9rem;
+  --edit-profile__form-right-padding: 1.6rem;
+  --edit-profile__form-padding:
+    var(--edit-profile__form-top-padding)
+    var(--edit-profile__form-right-padding)
+    var(--edit-profile__form-bottom-padding)
+    var(--edit-profile__form-left-padding);
+}
+
+.edit-profile__button {
+  margin-bottom: var(--edit-profile__button-margin-bottom) !important;
+}
+
+.edit-profile__title {
+  align-self: center !important;
+}
+
+.edit-profile__face-icon {
+  padding-right: var(--edit-profile__face-icon-padding-right);
+}
+
+.edit-profile__field {
+  padding-bottom: var(--edit-profile__field-bottom-padding) !important;
+}
+
+.edit-profile__form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--edit-profile__form-padding);
+}

@@ -1,0 +1,40 @@
+:root {
+  --companies-table__add-button-position: 2rem;
+  --create-company__button-margin-bottom: 0.52rem;
+  --create-company__form-top-padding: 1.9rem;
+  --create-company__form-left-padding: 1.6rem;
+  --create-company__form-bottom-padding: 1.9rem;
+  --create-company__form-right-padding: 1.6rem;
+  --create-company__field-bottom-padding: 1.6rem;
+  --create-company__form-padding:
+    var(--create-company__form-top-padding)
+    var(--create-company__form-right-padding)
+    var(--create-company__form-bottom-padding)
+    var(--create-company__form-left-padding);
+}
+
+.companies-table__add-button {
+  position: fixed !important;
+  right: var(--companies-table__add-button-position);
+  bottom: var(--companies-table__add-button-position);
+}
+
+.create-company__button {
+  margin-bottom: var(--create-company__button-margin-bottom) !important;
+}
+
+.create-company__title {
+  align-self: center !important;
+}
+
+.create-company__form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--create-company__form-padding);
+}
+
+.create-company__field {
+  padding-bottom: var(--create-company__field-bottom-padding) !important;
+}

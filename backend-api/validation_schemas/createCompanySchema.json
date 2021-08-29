@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "createCompanySchema.json",
+    "title": "Create company",
+    "description": "Schema that will be used to create company on JSON request.",
+    "properties": {
+        "name": {
+            "type": "string",
+            "title": "Company name"
+        },
+        "residence": {
+            "type": "string",
+            "title": "Company residence"
+        },
+        "specialization": {
+            "type": "string",
+            "title": "Company description"
+        },
+        "phone": {
+            "title": "Phone number (contact)"
+        },
+        "companyID": {
+            "type": "string",
+            "title": "Company ID - IČO/DIČO"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "name",
+        "residence",
+        "specialization",
+        "phone",
+        "companyID"
+    ]
+}

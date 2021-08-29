@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "createDemandSchema.json",
+    "title": "Create demand",
+    "description": "Schema that will be used to create demand on JSON request.",
+    "properties": {
+        "name": {
+            "type": "string",
+            "title": "Demand name"
+        },
+        "budget": {
+            "type": "number",
+            "title": "Project budget"
+        },
+        "description": {
+            "type": "string",
+            "title": "Demand description"
+        },
+        "until": {
+            "title": "Until time",
+            "format": "date"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "name",
+        "budget",
+        "description",
+        "until"
+    ]
+}

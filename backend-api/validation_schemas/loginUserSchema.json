@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "loginUserSchema.json",
+    "title": "Login user",
+    "description": "Schema that will be used to verify login JSON request.",
+    "properties": {
+        "email": {
+            "type": "string",
+            "format": "email",
+            "title": "User email (Email, Password, Google)"
+        },
+        "password": {
+            "type": "string",
+            "title": "User password (Email)",
+            "minLength": 4
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "email",
+        "password"
+    ]
+}

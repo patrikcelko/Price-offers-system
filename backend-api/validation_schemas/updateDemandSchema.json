@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "updateDemandSchema.json",
+    "title": "Update demand",
+    "description": "Schema that will be used to update demand on JSON request.",
+    "properties": {
+        "demandUUID": {
+            "type": "string",
+            "title": "Demand UUID"
+        },
+        "name": {
+            "type": "string",
+            "title": "Demand name"
+        },
+        "budget": {
+            "type": "number",
+            "title": "Project budget"
+        },
+        "description": {
+            "type": "string",
+            "title": "Demand description"
+        },
+        "until": {
+            "title": "Until time",
+            "format": "date"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "demandUUID"
+    ]
+}

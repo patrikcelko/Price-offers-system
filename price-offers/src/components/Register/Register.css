@@ -1,0 +1,36 @@
+:root {
+  --register-desktop-height: auto;
+  --register-mobile-height: auto;
+  --register__field-bottom-padding: 1.6rem;
+  --register__form-top-padding: 1.9rem;
+  --register__form-left-padding: 1.6rem;
+  --register__form-bottom-padding: 1.9rem;
+  --register__form-right-padding: 1.6rem;
+  --register__form-padding:
+    var(--register__form-top-padding)
+    var(--register__form-right-padding)
+    var(--register__form-bottom-padding)
+    var(--register__form-left-padding);
+}
+
+.register {
+  height: var(--register-mobile-height);
+}
+
+.register__field {
+  padding-bottom: var(--register__field-bottom-padding) !important;
+}
+
+.register__form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--register__form-padding);
+}
+
+@media only screen and (min-device-width: 1000px) {
+  .register {
+    height: var(--register-desktop-height);
+  }
+}

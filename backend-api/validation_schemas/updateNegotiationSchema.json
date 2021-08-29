@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "updateNegotiationSchema.json",
+    "title": "Update negotation schema",
+    "description": "Schema that will be used to update negotation JSON request.",
+    "properties": {
+        "negotiationUUID": {
+            "type": "string",
+            "title": "negotiationID UUID"
+        },
+        "price": {
+            "type": "number",
+            "title": "Sugested price"
+        },
+        "status": {
+            "title": "Demand status",
+            "type": "string",
+            "enum": [
+                "open",
+                "rejected",
+                "approved"
+            ]
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "negotiationUUID"
+    ]
+}

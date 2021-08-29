@@ -1,0 +1,60 @@
+@import '../../../assets/colors.css';
+:root {
+  --demand-table__add-button-position: 2rem;
+  --demand__lock-icon-top: 0.38rem;
+  --demand__warning-container-pading-top: 5rem;
+  --demand__warning-container__warning-text-border: 0.07rem;
+  --demand__warning-container__warning-text-radius: 0.5rem;
+  --demand__warning-container__warning-text-padding: 1rem;
+  --demand__warning-container__warning-text__icon-pading: 0.5rem;
+}
+
+.demand__warning-container {
+  padding-top: var(--demand__warning-container-pading-top);
+  margin: auto;
+  text-align: center;
+}
+
+.demand__warning-container__warning-text {
+  max-width: 40%;
+  border: dashed var(--demand__warning-container__warning-text-border) var(--primary-color);
+  border-radius: var(--demand__warning-container__warning-text-radius);
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  padding: var(--demand__warning-container__warning-text-padding);
+  color: var(--warning-color);
+}
+
+.demand__warning-container__warning-text__icon {
+  transform: scale(1.6);
+  padding: var(--demand__warning-container__warning-text__icon-pading);
+}
+
+.demand-table__add-button {
+  position: fixed !important;
+  right: var(--demand-table__add-button-position);
+  bottom: var(--demand-table__add-button-position);
+}
+
+.demand__lock-icon-open {
+  transform: scale(0.8);
+  position: relative;
+  top: var(--demand__lock-icon-top);
+  color: var(--lock-open);
+}
+
+.demand__lock-icon-locked {
+  transform: scale(0.8);
+  position: relative;
+  top: var(--demand__lock-icon-top);
+  color: var(--lock-close);
+}
+
+.demand__lock-text-open {
+  color: var(--lock-open);
+}
+
+.demand__lock-text-locked {
+  color: var(--lock-close);
+}

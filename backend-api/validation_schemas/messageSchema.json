@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "messageSchema.json",
+    "title": "Message schema",
+    "description": "Schema that will be used to verify login JSON request.",
+    "properties": {
+        "message": {
+            "type": "string",
+            "title": "Message that will be used"
+        },
+        "negotiationID": {
+            "type": "string",
+            "title": "Negotiation ID"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "message",
+        "negotiationID"
+    ]
+}

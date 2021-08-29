@@ -1,0 +1,63 @@
+@import '../../assets/colors.css';
+
+:root {
+  --auth-box-desktop-width: 34rem;
+  --auth-box-desktop-border-radius: 0.5rem;
+  --auth-box-background: var(--secondary-color);
+  --auth-box-desktop-box-shadow-h-offset: 0.2rem;
+  --auth-box-desktop-box-shadow-v-offset: 0.2rem;
+  --auth-box-desktop-box-shadow-blur: 1rem;
+  --auth-box-desktop-box-shadow-spread: 0.5rem;
+  --auth-box-desktop-box-shadow-color: var(--shadow-color);
+  --auth-box-desktop-box-shadow: var(--auth-box-desktop-box-shadow-h-offset) var(--auth-box-desktop-box-shadow-v-offset) var(--auth-box-desktop-box-shadow-blur) var(--auth-box-desktop-box-shadow-spread) var(--auth-box-desktop-box-shadow-color);
+  --auth-box__tabs-color: var(--primary-text-color);
+  --auth-box__header-height: 3rem;
+  --auth-box__header-font-size: 2rem;
+  --auth-box__header-background: var(--primary-color);
+  --auth-box__header-desktop-border-radius-top-left: 0.5rem;
+  --auth-box__header-desktop-border-radius-top-right: 0.5rem;
+  --auth-box__header-desktop-border-radius-bottom-right: 0;
+  --auth-box__header-desktop-border-radius-bottom-left: 0;
+  --auth-box__header-desktop-border-radius: var(--auth-box__header-desktop-border-radius-top-left) var(--auth-box__header-desktop-border-radius-top-right) var(--auth-box__header-desktop-border-radius-bottom-right) var(--auth-box__header-desktop-border-radius-bottom-left);
+}
+
+.auth-box {
+  width: 100%;
+  height: calc(100% - var(--header-height));
+  background: var(--auth-box-background);
+}
+
+.auth-box__tabs {
+  color: var(--auth-box__tabs-color);
+}
+
+.auth-box__tab {
+  height: calc(100% - var(--auth-box__header-height));
+}
+
+.auth-box__header {
+  display: flex;
+  height: var(--auth-box__header-height);
+  align-items: center;
+  justify-content: center;
+  background: var(--auth-box__header-background);
+  font-size: var(--auth-box__header-font-size);
+  text-transform: uppercase;
+}
+
+@media only screen and (min-device-width: 1000px) {
+  .auth-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--auth-box-desktop-width);
+    height: auto;
+    border-radius: var(--auth-box-desktop-border-radius);
+    box-shadow: var(--auth-box-desktop-box-shadow);
+    transform: translate(-50%, -50%);
+  }
+
+  .auth-box__header {
+    border-radius: var(--auth-box__header-desktop-border-radius);
+  }
+}

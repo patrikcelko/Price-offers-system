@@ -1,0 +1,75 @@
+@import '../../../assets/colors.css';
+:root {
+  --negotitation__message-size-size: 1.2rem;
+  --negotiations__warning-container-pading-top: 5rem;
+  --negotiations__warning-container__warning-text-border: 0.07rem;
+  --negotiations__warning-container__warning-text-radius: 0.5rem;
+  --negotiations__warning-container__warning-text-padding: 1rem;
+  --negotiations__warning-container__warning-text__icon-pading: 0.5rem;
+  --negotitation__message__date-top: -0.42rem;
+  --negotitation__message__date-padding-left: 0.32rem;
+  --negotitation__message-border-radius: 0.32rem;
+  --negotitation__message-padding: 0.32rem;
+}
+
+.negotiations__warning-container {
+  padding-top: var(--negotiations__warning-container-pading-top);
+  margin: auto;
+  text-align: center;
+}
+
+.negotiations__warning-container__warning-text {
+  max-width: 40%;
+  border: dashed var(--negotiations__warning-container__warning-text-border) var(--primary-color);
+  border-radius: var(--negotiations__warning-container__warning-text-radius);
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  padding: var(--negotiations__warning-container__warning-text-padding);
+  color: var(--warning-color);
+}
+
+.negotiations__warning-container__warning-text__icon {
+  transform: scale(1.6);
+  padding: var(--negotiations__warning-container__warning-text__icon-pading);
+}
+
+.negotitation__message-size {
+  size: var(--negotitation__message-size-size);
+}
+
+.negotitation__lock-icon-open {
+  transform: scale(0.8);
+  position: relative;
+  top: var(--demand__lock-icon-top);
+  color: var(--lock-open);
+}
+
+.negotitation__lock-icon-locked {
+  transform: scale(0.8);
+  position: relative;
+  top: var(--demand__lock-icon-top);
+  color: var(--lock-close);
+}
+
+.negotitation__lock-text-open {
+  color: var(--lock-open);
+}
+
+.negotitation__lock-text-locked {
+  color: var(--lock-close);
+}
+
+.negotitation__message__date {
+  position: relative;
+  justify-self: center;
+  top: var(--negotitation__message__date-top);
+  padding-left: var(--negotitation__message__date-padding-left);
+}
+
+.negotitation__message{
+  background-color:var(--primary-text-color);
+  padding: var(--negotitation__message-padding);
+  border-radius: var(--negotitation__message-border-radius);
+  overflow: auto;
+}

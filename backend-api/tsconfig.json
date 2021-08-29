@@ -1,0 +1,22 @@
+{
+    "extends": "@tsconfig/node12/tsconfig.json",
+    "compilerOptions": {
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "noImplicitAny": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "lib": [
+            "esnext"
+        ],
+        "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

@@ -1,0 +1,111 @@
+@import '../../assets/colors.css';
+
+:root {
+  --header__tabs__icon-and-text-top-margin: -0.44rem;
+  --header__tabs__icon-and-text__icon-top: 0.31rem;
+  --header-height: 3rem;
+  --header-background: var(--primary-color);
+  --header-box-shadow-h-offset: 0.5rem;
+  --header-box-shadow-v-offset: 0;
+  --header-box-shadow-blur: 1rem;
+  --header-box-shadow-spread: 0.5rem;
+  --header-box-shadow-color: var(--shadow-color);
+  --header-box-shadow:
+    var(--header-box-shadow-h-offset)
+    var(--header-box-shadow-v-offset)
+    var(--header-box-shadow-blur)
+    var(--header-box-shadow-spread)
+    var(--header-box-shadow-color);
+  --header__company-logo-width: 2rem;
+  --header__company-logo-left-margin: 0.5rem;
+  --header__tabs-left-margin: 2rem;
+  --header__tabs-color: var(--primary-text-color);
+  --header__user-button-color: var(--secondary-text-color);
+  --header__notifications-button-right: 2.8rem;
+  --header__user-button-top-margin: 0;
+  --header__user-button-right-margin: 0.5rem;
+  --header__user-button-bottom-margin: 0;
+  --header__user-button-left-margin: auto;
+  --header__user-button-margin:
+    var(--header__user-button-top-margin)
+    var(--header__user-button-right-margin)
+    var(--header__user-button-bottom-margin)
+    var(--header__user-button-left-margin);
+  --header__title-left-padding: 0.5rem;
+  --header__title-font-size: 2rem;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: var(--header-height);
+  align-items: center;
+  background: var(--header-background);
+  box-shadow: var(--header-box-shadow);
+}
+
+.header__title {
+  padding-left: var(--header__title-left-padding);
+  font-size: var(--header__title-font-size);
+  font-weight: bold;
+}
+
+.header__company-logo {
+  width: var(--header__company-logo-width);
+  margin-left: var(--header__company-logo-left-margin);
+}
+
+.header__tabs {
+  margin-left: var(--header__tabs-left-margin);
+  color: var(--header__tabs-color);
+}
+
+.header__tab {
+  width: 100%;
+  height: calc(100% - var(--header-height));
+}
+
+.header__user-button {
+  margin: 0 var(--header__user-button-right-margin) 0 auto !important;
+  color: var(--header__user-button-color) !important;
+}
+
+@media only screen and (max-device-width: 1000px) {
+  .header__tabs {
+    display: none !important;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}
+
+.header__tabs__icon-and-text {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: var(--header__tabs__icon-and-text-top-margin);
+}
+
+.header__tabs__icon-and-text__icon-demands {
+  position: relative;
+  top: var(--header__tabs__icon-and-text__icon-top);
+}
+
+.header__tabs__icon-and-text__icon-companies {
+  position: relative;
+  top: var(--header__tabs__icon-and-text__icon-top);
+  transform: scale(0.8);
+}
+
+.header__tabs__icon-and-text__icon-negot {
+  position: relative;
+  top: var(--header__tabs__icon-and-text__icon-top);
+  transform: scale(0.8);
+}
+
+.header__logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents !important;
+  white-space: nowrap !important;
+}
